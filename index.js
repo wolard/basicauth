@@ -2,6 +2,7 @@ const http = require('http');
 const express = require('express');
 const morgan = require('morgan');
 const auth = require('./auth');
+const cookierParser = require('cookie-parser')
 const app = express();
 
 app.use(morgan('dev'));
